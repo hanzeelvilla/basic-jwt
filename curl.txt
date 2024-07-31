@@ -1,0 +1,8 @@
+GET ACCESS AND REFRESH TOKEN
+curl -d "{\"username\":\"YOUR_USERNAME\", \"password\":\"YOUR_PSWD\"}" -H "Content-Type: application/json" -X POST http://localhost:8000/api/token/
+
+TRY ACCESS TOKEN
+curl -H "Content-Type: aplication/json" -H "Authorization: Bearer ACCESS_TOKEN_ALV" http://localhost:8000/
+
+TRY REFRESH TOKEN
+curl -d "{\"refresh\":\"REFRESH_TOKEN_ALV\"}" -H "Content-Type: application/json" -X POST http://localhost:8000/api/token/refresh/
